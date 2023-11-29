@@ -63,10 +63,10 @@ const Header = ({ cartItems }) => {
           </div>
         <div className="col-12 col-md-3 mt-4 mt-md-0 text-center" >
           
-          <span id="cart" className="ml-3" >
-          <IconButton color="primary" aria-label="add to shopping cart" href="/cart" style={{color:"yellow"}}>
+         <span id="cart" className="ml-3" >
+         <Link> <IconButton color="primary" aria-label="add to shopping cart" href="/cart" style={{color:"yellow"}}>
         <AddShoppingCartIcon />
-      </IconButton>
+      </IconButton></Link>
 
       
           </span>
