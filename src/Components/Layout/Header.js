@@ -50,7 +50,7 @@ const Header = ({ cartItems }) => {
     />
   </a>
   <div style={{ display: 'flex', flexDirection: 'row', marginLeft: '20px' }}>
-    <Link to="/" component={Link}><button class="button-54" role="button">Home</button></Link>
+    <Link to="/" ><button class="button-54" role="button">Home</button></Link>
     <Link to="/about"><button class="button-54" role="button">About Us</button></Link>
     <Link to="/teamPage"><button class="button-54" role="button">Meet the Team</button></Link>
     <Link to="/portfolio"><button class="button-54" role="button">Portfolio</button></Link>
