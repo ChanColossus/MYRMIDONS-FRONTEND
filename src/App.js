@@ -146,6 +146,7 @@ function App() {
           <Route path="/register" element={<Register />} exact="true" />
           <Route path="/me" element={<Profile />} exact="true" />
           <Route path="/orders/me" element={<UserOrders />} exact="true" />
+          <Route path="/api/v1/order/:id/confirm" element={<OrdersList />} />
           <Route
             path="/cart"
             element={
