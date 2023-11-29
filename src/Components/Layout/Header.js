@@ -50,9 +50,9 @@ const Header = ({ cartItems }) => {
     />
   </a>
   <div style={{ display: 'flex', flexDirection: 'row', marginLeft: '20px' }}>
-    <a to="/" component={Link}><button class="button-54" role="button">Home</button></a>
-    <a to="/about"><button class="button-54" role="button">About Us</button></a>
-    <a to="/teamPage"><button class="button-54" role="button">Meet the Team</button></a>
+    <Link to="/" component={Link}><button class="button-54" role="button">Home</button></Link>
+    <Link to="/about"><button class="button-54" role="button">About Us</button></Link>
+    <Link to="/teamPage"><button class="button-54" role="button">Meet the Team</button></Link>
     <Link to="/portfolio"><button class="button-54" role="button">Portfolio</button></Link>
   </div>
 </div>
@@ -135,8 +135,8 @@ const Header = ({ cartItems }) => {
             </div>
           ) : (
             <Fragment>
-              <Link variant="outlined" to="/login" style={{ color: "yellow", border: "2px solid", marginLeft: "20px" }}>Login</Link>
-              <Button variant="outlined" to="/register" component={Link} style={{ color: "yellow", border: "2px solid", marginLeft: "20px" }}>Register</Button>
+              <Link><Button variant="outlined" to="/login" style={{ color: "yellow", border: "2px solid", marginLeft: "20px" }}>Login</Button></Link>
+              <Link> <Button variant="outlined" to="/register"  style={{ color: "yellow", border: "2px solid", marginLeft: "20px" }}>Register</Button></Link>
             </Fragment>
           )}
         </div>
