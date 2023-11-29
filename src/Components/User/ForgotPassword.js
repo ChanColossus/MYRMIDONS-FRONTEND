@@ -25,7 +25,7 @@ const ForgotPassword = () => {
     onSubmit: async (values) => {
       try {
         const { data } = await axios.post(
-          `http://localhost:4001/api/v1/password/forgot`,
+          `https://myrmidons-api.onrender.com/api/v1/password/forgot`,
           values,
           {
             headers: {

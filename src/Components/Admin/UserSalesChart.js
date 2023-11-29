@@ -28,7 +28,7 @@ const UserSalesChart = ({ data }) => {
       };
 
       const { data } = await axios.get(
-        `http://localhost:4001/api/v1/admin/customer-sales`,
+        `https://myrmidons-api.onrender.com/api/v1/admin/customer-sales`,
         config
       );
       setSales(data.customerSales);

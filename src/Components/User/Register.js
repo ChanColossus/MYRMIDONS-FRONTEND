@@ -48,7 +48,7 @@ const Register = () => {
       };
 
       const { data } = await axios.post(
-        `http://localhost:4001/api/v1/register`,
+        `https://myrmidons-api.onrender.com/api/v1/register`,
         userData,
         config
       );

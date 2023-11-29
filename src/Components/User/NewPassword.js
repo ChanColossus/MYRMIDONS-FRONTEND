@@ -33,7 +33,7 @@ const NewPassword = () => {
           },
         };
         const { data } = await axios.put(
-          `http://localhost:4001/api/v1/password/reset/${token}`,
+          `https://myrmidons-api.onrender.com/api/v1/password/reset/${token}`,
           values,
           config
         );

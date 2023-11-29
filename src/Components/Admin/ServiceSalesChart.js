@@ -49,7 +49,7 @@ const ServiceSalesChart = () => {
       };
 
       const { data } = await axios.get(
-        `http://localhost:4001/api/v1/admin/service-sales`,
+        `https://myrmidons-api.onrender.com/api/v1/admin/service-sales`,
         config
       );
       setServiceSales(data.serviceSales);

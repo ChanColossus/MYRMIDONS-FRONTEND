@@ -49,7 +49,7 @@ const NewMember = () => {
       };
 
       const { data } = await axios.post(
-        `http://localhost:4001/api/v1/admin/MemberList/new`,
+        `https://myrmidons-api.onrender.com/api/v1/admin/MemberList/new`,
         formData,
         config
       );

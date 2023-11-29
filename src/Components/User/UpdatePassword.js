@@ -25,7 +25,7 @@ const UpdatePassword = () => {
       };
 
       const { data } = await axios.put(
-        `http://localhost:4001/api/v1/password/update`,
+        `https://myrmidons-api.onrender.com/api/v1/password/update`,
         values,
         config
       );

@@ -14,7 +14,7 @@ const Portfolio = () => {
   const [currentPage, setPageNumber] = useState(1);
 
   const getProjectList = async () => {
-    let link = `http://localhost:4001/api/v1/portfolio?page=${currentPage}&per_page=2`;
+    let link = `https://myrmidons-api.onrender.com/api/v1/portfolio?page=${currentPage}&per_page=2`;
 
     try {
       let res = await axios.get(link);
@@ -75,7 +75,7 @@ const Portfolio = () => {
 
   // useEffect(() => {
   //   axios
-  //     .get("http://localhost:4001/api/v1/portfolio")
+  //     .get("https://myrmidons-api.onrender.com/api/v1/portfolio")
   //     .then((response) => {
   //       setPortfolios(response.data.portfolios);
   //     })

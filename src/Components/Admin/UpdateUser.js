@@ -47,7 +47,7 @@ const UpdateUser = () => {
   const getUserDetails = async (id) => {
     try {
       const { data } = await axios.get(
-        `http://localhost:4001/api/v1/admin/user/${id}`,
+        `https://myrmidons-api.onrender.com/api/v1/admin/user/${id}`,
         config
       );
       setUser(data.user);
@@ -60,7 +60,7 @@ const UpdateUser = () => {
   const updateUser = async (id, userData) => {
     try {
       const { data } = await axios.put(
-        `http://localhost:4001/api/v1/admin/user/${id}`,
+        `https://myrmidons-api.onrender.com/api/v1/admin/user/${id}`,
         userData,
         config
       );

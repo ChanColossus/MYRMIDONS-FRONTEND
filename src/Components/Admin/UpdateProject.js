@@ -81,7 +81,7 @@ const UpdateProject = () => {
   const getPortfolio = async (id) => {
     try {
       const { data } = await axios.get(
-        `http://localhost:4001/api/v1/portfolio/${id}`
+        `https://myrmidons-api.onrender.com/api/v1/portfolio/${id}`
       );
       setProject(data.portfolios);
       const timeoutId = setTimeout(() => {
@@ -101,7 +101,7 @@ const UpdateProject = () => {
         },
       };
       const { data } = await axios.put(
-        `http://localhost:4001/api/v1/admin/portfolio/${id}`,
+        `https://myrmidons-api.onrender.com/api/v1/admin/portfolio/${id}`,
         projectData,
         config
       );

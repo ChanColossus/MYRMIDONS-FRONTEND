@@ -29,7 +29,7 @@ const ProjectList = () => {
       };
 
       const { data } = await axios.get(
-        `http://localhost:4001/api/v1/admin/portfolio`,
+        `https://myrmidons-api.onrender.com/api/v1/admin/portfolio`,
         config
       );
       console.log(data.portfolios);
@@ -82,7 +82,7 @@ const ProjectList = () => {
         },
       };
       const { data } = await axios.delete(
-        `http://localhost:4001/api/v1/admin/portfolio/${id}`,
+        `https://myrmidons-api.onrender.com/api/v1/admin/portfolio/${id}`,
         config
       );
 

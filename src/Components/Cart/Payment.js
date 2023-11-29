@@ -49,7 +49,7 @@ const Payment = ({ cartItems, eventInfo }) => {
         },
       };
       const { data } = await axios.post(
-        `http://localhost:4001/api/v1/order/new`,
+        `https://myrmidons-api.onrender.com/api/v1/order/new`,
         order,
         config
       );

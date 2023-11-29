@@ -28,7 +28,7 @@ const UpdateProfile = () => {
     };
     try {
       const { data } = await axios.get(
-        `http://localhost:4001/api/v1/me`,
+        `https://myrmidons-api.onrender.com/api/v1/me`,
         config
       );
       console.log(data);
@@ -53,7 +53,7 @@ const UpdateProfile = () => {
     };
     try {
       const { data } = await axios.put(
-        `http://localhost:4001/api/v1/me/update`,
+        `https://myrmidons-api.onrender.com/api/v1/me/update`,
         userData,
         config
       );

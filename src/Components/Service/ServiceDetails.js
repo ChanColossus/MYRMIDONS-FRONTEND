@@ -28,7 +28,7 @@ const ServiceDetails = ({ addItemToCart, cartItems }) => {
   // const alert = useAlert();
 
   const serviceDetails = async (id) => {
-    let link = `http://localhost:4001/api/v1/service/${id}`;
+    let link = `https://myrmidons-api.onrender.com/api/v1/service/${id}`;
     console.log(link);
     let res = await axios.get(link);
     console.log(res);

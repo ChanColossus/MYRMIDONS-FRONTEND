@@ -16,7 +16,7 @@ const Header = ({ cartItems }) => {
   const [loading, setLoading] = useState(true);
   const logoutUser = async () => {
     try {
-      await axios.get(`http://localhost:4001/api/v1/logout`);
+      await axios.get(`https://myrmidons-api.onrender.com/api/v1/logout`);
 
       setUser("");
 

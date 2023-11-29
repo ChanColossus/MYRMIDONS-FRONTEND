@@ -39,7 +39,7 @@ const Dashboard = () => {
       };
 
       const { data } = await axios.get(
-        `http://localhost:4001/api/v1/admin/service`,
+        `https://myrmidons-api.onrender.com/api/v1/admin/service`,
         config
       );
       console.log(data);
@@ -61,7 +61,7 @@ const Dashboard = () => {
       };
 
       const { data } = await axios.get(
-        `http://localhost:4001/api/v1/admin/portfolio`,
+        `https://myrmidons-api.onrender.com/api/v1/admin/portfolio`,
         config
       );
       console.log(data);
@@ -84,7 +84,7 @@ const Dashboard = () => {
       };
 
       const { data } = await axios.get(
-        `http://localhost:4001/api/v1/admin/users`,
+        `https://myrmidons-api.onrender.com/api/v1/admin/users`,
         config
       );
       console.log(data);
@@ -107,7 +107,7 @@ const Dashboard = () => {
       };
 
       const { data } = await axios.get(
-        `http://localhost:4001/api/v1/admin/MemberList`,
+        `https://myrmidons-api.onrender.com/api/v1/admin/MemberList`,
         config
       );
       console.log(data);

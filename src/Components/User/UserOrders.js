@@ -32,7 +32,7 @@ const OrdersList = () => {
         },
       };
       const { data } = await axios.get(
-        `http://localhost:4001/api/v1/orders/me`,
+        `https://myrmidons-api.onrender.com/api/v1/orders/me`,
         config
       );
       console.log(data); // Add this line to log the data

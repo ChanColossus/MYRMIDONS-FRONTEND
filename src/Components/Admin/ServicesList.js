@@ -30,7 +30,7 @@ const ServicesList = () => {
       };
 
       const { data } = await axios.get(
-        `http://localhost:4001/api/v1/admin/service`,
+        `https://myrmidons-api.onrender.com/api/v1/admin/service`,
         config
       );
       console.log(data);
@@ -74,7 +74,7 @@ const ServicesList = () => {
         },
       };
       const { data } = await axios.delete(
-        `http://localhost:4001/api/v1/admin/service/${id}`,
+        `https://myrmidons-api.onrender.com/api/v1/admin/service/${id}`,
         config
       );
 

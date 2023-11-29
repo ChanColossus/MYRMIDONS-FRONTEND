@@ -93,7 +93,7 @@ const NewService = () => {
       };
 
       const { data } = await axios.post(
-        `http://localhost:4001/api/v1/admin/service/new`,
+        `https://myrmidons-api.onrender.com/api/v1/admin/service/new`,
         formData,
         config
       );

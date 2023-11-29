@@ -26,7 +26,7 @@ const Login = () => {
         },
       };
       const { data } = await axios.post(
-        `http://localhost:4001/api/v1/login`,
+        `https://myrmidons-api.onrender.com/api/v1/login`,
         { email, password },
         config
       );

@@ -12,7 +12,7 @@ const Team = () => {
 
   useEffect(() => {
     axios
-      .get("http://localhost:4001/api/v1/members")
+      .get("https://myrmidons-api.onrender.com/api/v1/members")
       .then((response) => {
         setTeam(response.data.team);
         const timeoutId = setTimeout(() => {

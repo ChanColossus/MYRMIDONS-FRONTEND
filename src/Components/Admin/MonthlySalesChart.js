@@ -26,7 +26,7 @@ export default function MonthlySalesChart() {
       };
 
       const { data } = await axios.get(
-        `http://localhost:4001/api/v1/admin/sales-per-month`,
+        `https://myrmidons-api.onrender.com/api/v1/admin/sales-per-month`,
         config
       );
       setSales(data.salesPerMonth);

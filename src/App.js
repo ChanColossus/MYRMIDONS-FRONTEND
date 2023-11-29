@@ -72,7 +72,7 @@ function App() {
 
     try {
       const { data } = await axios.get(
-        `http://localhost:4001/api/v1/service/${id}`
+        `https://myrmidons-api.onrender.com/api/v1/service/${id}`
       );
       const item = {
         service: data.service._id,

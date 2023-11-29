@@ -18,7 +18,7 @@ const DashboardCalendar = () => {
             Authorization: `Bearer ${getToken()}`,
           },
         };
-        const { data } = await axios.get('http://localhost:4001/api/v1/admin/orders', config);
+        const { data } = await axios.get('https://myrmidons-api.onrender.com/api/v1/admin/orders', config);
         const confirmedOrders = data.orders.reduce((acc, order) => {
           if (order.orderStatus === 'Confirmed') {
             order.orderItems.forEach((item) => {

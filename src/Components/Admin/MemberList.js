@@ -27,7 +27,7 @@ const MemberList = () => {
       };
 
       const { data } = await axios.get(
-        `http://localhost:4001/api/v1/admin/MemberList`,
+        `https://myrmidons-api.onrender.com/api/v1/admin/MemberList`,
         config
       );
       console.log(data.team);
@@ -71,7 +71,7 @@ const MemberList = () => {
         },
       };
       const { data } = await axios.delete(
-        `http://localhost:4001/api/v1/admin/Memberlist/${id}`,
+        `https://myrmidons-api.onrender.com/api/v1/admin/Memberlist/${id}`,
         config
       );
       console.log(data.success)

@@ -27,7 +27,7 @@ const UsersList = () => {
   const listUsers = async () => {
     try {
       const { data } = await axios.get(
-        `http://localhost:4001/api/v1/admin/users`,
+        `https://myrmidons-api.onrender.com/api/v1/admin/users`,
         config
       );
       setAllUsers(data.users);
@@ -41,7 +41,7 @@ const UsersList = () => {
   const deleteUser = async (id) => {
     try {
       const { data } = await axios.delete(
-        `http://localhost:4001/api/v1/admin/user/${id}`,
+        `https://myrmidons-api.onrender.com/api/v1/admin/user/${id}`,
         config
       );
       setIsDeleted(data.success);

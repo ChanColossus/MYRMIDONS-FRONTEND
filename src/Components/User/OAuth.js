@@ -31,7 +31,7 @@ function OAuth() {
         },
       };
       const { data } = await axios.post(
-        `http://localhost:4001/api/v1/google`,
+        `https://myrmidons-api.onrender.com/api/v1/google`,
         {
           email: user.email,
           name: user.displayName || user.email,
@@ -66,7 +66,7 @@ function OAuth() {
         },
       };
       const { data } = await axios.post(
-        `http://localhost:4001/api/v1/facebook`,
+        `https://myrmidons-api.onrender.com/api/v1/facebook`,
         {
           email: user.email,
           name: user.displayName || user.email,

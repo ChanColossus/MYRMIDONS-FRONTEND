@@ -33,7 +33,7 @@ const OrdersList = () => {
         },
       };
       const { data } = await axios.get(
-        `http://localhost:4001/api/v1/admin/orders`,
+        `https://myrmidons-api.onrender.com/api/v1/admin/orders`,
         config
       );
       console.log(data); // Add this line to log the data
@@ -66,7 +66,7 @@ const OrdersList = () => {
       };
 
       const { data } = await axios.put(
-        `http://localhost:4001/api/v1/admin/order/${orderId}`,
+        `https://myrmidons-api.onrender.com/api/v1/admin/order/${orderId}`,
         { orderStatus: "Finished" }, // Set the new status here
         config
       );
@@ -91,7 +91,7 @@ const OrdersList = () => {
         },
       };
       const { data } = await axios.delete(
-        `http://localhost:4001/api/v1/admin/order/${id}`,
+        `https://myrmidons-api.onrender.com/api/v1/admin/order/${id}`,
         config
       );
       setIsDeleted(data.success);

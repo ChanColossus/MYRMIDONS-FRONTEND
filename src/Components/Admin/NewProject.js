@@ -78,7 +78,7 @@ const NewProject = () => {
       };
 
       const { data } = await axios.post(
-        `http://localhost:4001/api/v1/admin/portfolio/new`,
+        `https://myrmidons-api.onrender.com/api/v1/admin/portfolio/new`,
         formData,
         config
       );

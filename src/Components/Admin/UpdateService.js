@@ -101,7 +101,7 @@ const UpdateService = () => {
   const getServiceDetails = async (id) => {
     try {
       const { data } = await axios.get(
-        `http://localhost:4001/api/v1/service/${id}`
+        `https://myrmidons-api.onrender.com/api/v1/service/${id}`
       );
       console.log("Fetched Service Details:", data);
       setService(data.service);
@@ -122,7 +122,7 @@ const UpdateService = () => {
         },
       };
       const { data } = await axios.put(
-        `http://localhost:4001/api/v1/admin/service/${id}`,
+        `https://myrmidons-api.onrender.com/api/v1/admin/service/${id}`,
         serviceData,
         config
       );

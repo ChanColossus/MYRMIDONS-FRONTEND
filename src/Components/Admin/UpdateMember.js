@@ -84,7 +84,7 @@ const UpdateMember = () => {
       };
 
       const { data } = await axios.get(
-        `http://localhost:4001/api/v1/admin/MemberList/${id}`,
+        `https://myrmidons-api.onrender.com/api/v1/admin/MemberList/${id}`,
         config
       );
       // console .log(data)
@@ -106,7 +106,7 @@ const UpdateMember = () => {
         },
       };
       const { data } = await axios.put(
-        `http://localhost:4001/api/v1/admin/MemberList/${id}`,
+        `https://myrmidons-api.onrender.com/api/v1/admin/MemberList/${id}`,
         memberData,
         config
       );

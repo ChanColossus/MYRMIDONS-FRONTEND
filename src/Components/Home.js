@@ -36,7 +36,7 @@ const Home = () => {
     let navigate = useNavigate();
     
     const getService = async (page = 1, keyword = "") => {
-        let link = `http://localhost:4001/api/v1/service?page=${page}`;
+        let link = `https://myrmidons-api.onrender.com/api/v1/service?page=${page}`;
 
         if (keyword) {
             link += `&keyword=${keyword}`;
