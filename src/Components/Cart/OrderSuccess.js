@@ -6,8 +6,8 @@ const OrderSuccess = () => {
     
     sessionStorage.removeItem('orderInfo')
     localStorage.clear();
-    // localStorage.removeItem('cartItems');
-    // localStorage.removeItem('shippingInfo');
+    localStorage.removeItem('cartItems');
+    localStorage.removeItem('eventInfo');
     return (
         <Fragment>
 
