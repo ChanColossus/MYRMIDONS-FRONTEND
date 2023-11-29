@@ -135,7 +135,7 @@ const Header = ({ cartItems }) => {
             </div>
           ) : (
             <Fragment>
-              <Link variant="outlined" href="/login" style={{ color: "yellow", border: "2px solid", marginLeft: "20px" }}>Login</Link>
+              <Link variant="outlined" to="/login" style={{ color: "yellow", border: "2px solid", marginLeft: "20px" }}>Login</Link>
               <Button variant="outlined" href="/register" style={{ color: "yellow", border: "2px solid", marginLeft: "20px" }}>Register</Button>
             </Fragment>
           )}
