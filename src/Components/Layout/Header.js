@@ -51,9 +51,9 @@ const Header = ({ cartItems }) => {
   </a>
   <div style={{ display: 'flex', flexDirection: 'row', marginLeft: '20px' }}>
     <a to="/" component={Link}><button class="button-54" role="button">Home</button></a>
-    <a href="/about"><button class="button-54" role="button">About Us</button></a>
-    <a href="/teamPage"><button class="button-54" role="button">Meet the Team</button></a>
-    <a href="/portfolio"><button class="button-54" role="button">Portfolio</button></a>
+    <a to="/about"><button class="button-54" role="button">About Us</button></a>
+    <a to="/teamPage"><button class="button-54" role="button">Meet the Team</button></a>
+    <Link to="/portfolio"><button class="button-54" role="button">Portfolio</button></Link>
   </div>
 </div>
              
