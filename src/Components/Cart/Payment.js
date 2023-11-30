@@ -75,6 +75,7 @@ const Payment = ({ cartItems, eventInfo }) => {
       status: "succeeded",
     };
     createOrder(order);
+    localStorage.clear();
     navigate("/success");
   };
 
