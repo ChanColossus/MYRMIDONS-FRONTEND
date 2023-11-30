@@ -84,15 +84,18 @@ const Profile = () => {
           </div>
           <Button
             color="secondary"
-            href="/me/update"
+            to="/me/update"
             style={{ color: "yellow" }}
+component={Link}
           >
             Update Profile
           </Button>
           <br></br>
           <Button
             color="secondary"
-            href="/password/update"
+            to="/password/update"
+component={Link}
+
             style={{ color: "yellow" }}
           >
             Change Password
@@ -101,7 +104,9 @@ const Profile = () => {
 
           <Button
             color="secondary"
-            href="/orders/me"
+            to="/orders/me"
+component={Link}
+
             style={{ color: "yellow" }}
           >
             My Orders
